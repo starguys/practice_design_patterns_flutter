@@ -1,6 +1,6 @@
 # practice_design_patterns_flutter
 
-A new Flutter project.
+플러터 디자인 패턴을 연습하기 위한 레포 입니다.
 
 ## Getting Started
 
