@@ -25,6 +25,7 @@ class _StrategyViewState extends State<StrategyView> {
   @override
   Widget build(BuildContext context) {
     return LayOut(
+      title: 'Strategy',
       isCanBack: true,
       child: Column(
         children: [
@@ -32,6 +33,7 @@ class _StrategyViewState extends State<StrategyView> {
             onChanged: (text) => _formatAndDisplay(text),
           ),
           Text(_formattedText),
+          Text(_textEditor.format(_formattedText)),
           Text(_textEditor.formatter.toString()),
           ElevatedButton(
               onPressed: () {
