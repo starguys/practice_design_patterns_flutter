@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:practice_design_patterns_flutter/home/view/home_view.dart';
+import 'package:practice_design_patterns_flutter/state/view/state_view.dart';
 import 'package:practice_design_patterns_flutter/strategy/view/strategy_view.dart';
 
 final routesProvider =
@@ -22,6 +23,11 @@ class RoutesProvider extends ChangeNotifier {
                 name: StrategyView.routeName,
                 builder: (_, __) => const StrategyView(),
               ),
+              GoRoute(
+                path: 'state',
+                name: StateView.routeName,
+                builder: (_, __) => const StateView(),
+              )
             ])
       ];
 }
