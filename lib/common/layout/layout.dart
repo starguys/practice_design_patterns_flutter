@@ -27,7 +27,7 @@ AppBar renderAppBar(BuildContext context, String? title) {
       onTap: () {
         context.pop();
       },
-      child: Center(child: Icon(Icons.arrow_back_ios)),
+      child: const Center(child: Icon(Icons.arrow_back_ios)),
     ),
   );
 }
