@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'package:practice_design_patterns_flutter/common/layout/layout.dart';
@@ -43,7 +44,9 @@ class _StrategyViewState extends State<StrategyView> {
                           ? LowerCaseFormatter()
                           : UpperCaseFormatter());
                 });
-                print(_textEditor.formatter is UpperCaseFormatter);
+                if (kDebugMode) {
+                  print(_textEditor.formatter is UpperCaseFormatter);
+                }
               },
               child: const Text('Toggle Formatter'))
         ],
