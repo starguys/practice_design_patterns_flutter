@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import 'package:practice_design_patterns_flutter/common/layout/layout.dart';
 import 'package:practice_design_patterns_flutter/facade/view/facade_view.dart';
+import 'package:practice_design_patterns_flutter/factory/view/factory_view.dart';
 import 'package:practice_design_patterns_flutter/state/view/state_view.dart';
 import 'package:practice_design_patterns_flutter/strategy/view/strategy_view.dart';
 
@@ -43,6 +44,13 @@ class HomeView extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () => context.goNamed(FacadeView.routeName),
                 child: const Text('Facade'),
+              ),
+            ),
+            SizedBox(
+              width: btnWidth,
+              child: ElevatedButton(
+                onPressed: () => context.goNamed(FactoryView.routeName),
+                child: const Text('Factory'),
               ),
             ),
           ],
