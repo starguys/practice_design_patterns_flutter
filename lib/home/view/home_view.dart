@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:practice_design_patterns_flutter/abstract_factory/view/abstrract_factory_view.dart';
+import 'package:practice_design_patterns_flutter/command/view/command_view.dart';
 
 import 'package:practice_design_patterns_flutter/common/layout/layout.dart';
 import 'package:practice_design_patterns_flutter/facade/view/facade_view.dart';
@@ -51,6 +53,20 @@ class HomeView extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () => context.goNamed(FactoryView.routeName),
                 child: const Text('Factory'),
+              ),
+            ),
+            SizedBox(
+              width: btnWidth,
+              child: ElevatedButton(
+                onPressed: () => context.goNamed(AbstractFactoryView.routeName),
+                child: const Text('AbstractFactoryView'),
+              ),
+            ),
+            SizedBox(
+              width: btnWidth,
+              child: ElevatedButton(
+                onPressed: () => context.goNamed(CommandView.routeName),
+                child: const Text('CommandView'),
               ),
             ),
           ],
